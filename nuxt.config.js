@@ -18,6 +18,8 @@ export default {
     ]
   },
 
+  buildModules: ['@nuxtjs/tailwindcss'],
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],

@@ -1,89 +1,67 @@
 <template>
-  <div class="container mx-auto"  style="background-image: url('~assets/background.jpg')">
-    <div class="grid grid-cols-6 gap-4">
-      <!-- <div class="col-start-2 col-span-4 ..."> -->
-      <div
-        class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col"
-       
-      >
-        <div class="mb-4">
-          <label
-            class="block text-grey-darker text-sm font-bold mb-2"
-            for="username"
-          >
-            Username
-          </label>
-          <input
-            class="
-              shadow
-              appearance-none
-              border
-              rounded
-              w-full
-              py-2
-              px-3
-              text-grey-darker
-            "
-            id="username"
-            type="text"
-            placeholder="Username"
-          />
-        </div>
-        <div class="mb-6">
-          <label
-            class="block text-grey-darker text-sm font-bold mb-2"
-            for="password"
-          >
-            Password
-          </label>
-          <input
-            class="
-              shadow
-              appearance-none
-              border border-red
-              rounded
-              w-full
-              py-2
-              px-3
-              text-grey-darker
-              mb-3
-            "
-            id="password"
-            type="password"
-            placeholder="******************"
-          />
-          <p class="text-red text-xs italic">Please choose a password.</p>
-        </div>
-        <div class="flex items-center justify-between">
-          <button
-            class="
-              bg-blue
-              hover:bg-blue-dark
-              text-white
-              font-bold
-              py-2
-              px-4
-              rounded
-            "
-            type="button"
-          >
-            Sign In
-          </button>
-          <a
-            class="
-              inline-block
-              align-baseline
-              font-bold
-              text-sm text-blue
-              hover:text-blue-darker
-            "
-            href="#"
-          >
-            Forgot Password?
-          </a>
-        </div>
-        <!-- </div> -->
+  <div class="grid md:grid-cols-12 lg:grid-cols-7 sm:grid-cols-12 flex h-screen">
+    <div class="bg-white shadow-md rounded p-12 m-auto col-start-4 col-span-3">
+      <div>
+        <p class="text-3xl font-bold">Sign in</p>
+        <p class="text-lg">New user? Create an account</p>
       </div>
+
+      <div class="mb-4 space-y-12">
+        <label
+          class="block text-grey-darker text-sm font-bold mb-2"
+          for="username"
+        >
+          Username
+        </label>
+        <input
+          class="
+            shadow
+            appearance-none
+            border
+            rounded
+            w-full
+            py-2
+            px-3
+            text-grey-darker
+          "
+          id="username"
+          type="text"
+          placeholder="Username"
+        />
+      </div>
+
+      <div class="flex items-center justify-between">
+        <button
+          class="
+            bg-blue
+            hover:bg-blue-dark
+            text-white
+            font-bold
+            py-2
+            px-4
+            rounded
+          "
+          type="button"
+        >
+          Continue
+        </button>
+        <a
+          class="
+            inline-block
+            align-baseline
+            font-bold
+            text-sm text-blue
+            hover:text-blue-darker
+          "
+          href="#"
+        >
+          Forgot Password?
+        </a>
+      </div>
+      <p class="text-xs">
+        Protected by reCAPTCHA and subject to the Google Privacy Policy and
+        Terms of Service.
+      </p>
     </div>
   </div>
 </template>
@@ -98,6 +76,10 @@ export default {};
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+
+body {
+  background: url("https://images.unsplash.com/photo-1578836537282-3171d77f8632?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+}
 .container {
   margin: 0 auto;
   min-height: 100vh;
